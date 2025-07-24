@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>رزرو هتل | Hotel Booking</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="page-loader" class="page-loader">
+    <div class="loader-spinner"></div>
+    <span class="loader-text">در حال بارگذاری...</span>
+  </div>
+  <header class="header">
+    <div class="container">
+      <div class="logo">هتل‌یاب</div>
+      <nav class="nav">
+        <a href="#">خانه</a>
+        <a href="#hotels">هتل‌ها</a>
+        <a href="#features">امکانات</a>
+        <a href="#contact">تماس با ما</a>
+        <a href="#search" class="cta">رزرو کن</a>
+      </nav>
+      <button class="menu-toggle" aria-label="باز کردن منو">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav">
+      <a href="#">خانه</a>
+      <a href="#hotels">هتل‌ها</a>
+      <a href="#features">امکانات</a>
+      <a href="#contact">تماس با ما</a>
+      <a href="#search" class="cta">رزرو کن</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="search">
+    <div class="container">
+      <h1 data-aos="fade-up">بهترین هتل‌ها را با یک جستجو پیدا کن!</h1>
+      <p data-aos="fade-up" data-aos-delay="200">جستجو، مقایسه و رزرو هتل در سراسر ایران با بهترین قیمت و پشتیبانی ۲۴ ساعته</p>
+      <form class="search-box" data-aos="zoom-in" data-aos-delay="400">
+        <input type="text" placeholder="شهر یا مقصد...">
+        <input type="date" placeholder="تاریخ ورود">
+        <input type="date" placeholder="تاریخ خروج">
+        <button type="submit">جستجو</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="hotels" id="hotels">
+    <div class="container">
+      <h2 data-aos="fade-right">هتل‌های پیشنهادی</h2>
+      <div class="swiper hotel-swiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide hotel-card">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" loading="lazy" alt="Hotel 1">
+            <div class="hotel-info">
+              <h3>هتل ساحلی</h3>
+              <p>تهران</p>
+              <span>هر شب از ۱٬۲۰۰٬۰۰۰ تومان</span>
+            </div>
+          </div>
+          <div class="swiper-slide hotel-card">
+            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Hotel 2">
+            <div class="hotel-info">
+              <h3>هتل کوهستانی</h3>
+              <p>شیراز</p>
+              <span>هر شب از ۹۵۰٬۰۰۰ تومان</span>
+            </div>
+          </div>
+          <div class="swiper-slide hotel-card">
+            <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Hotel 3">
+            <div class="hotel-info">
+              <h3>هتل لوکس</h3>
+              <p>اصفهان</p>
+              <span>هر شب از ۲٬۰۰۰٬۰۰۰ تومان</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="all-hotels" id="all-hotels">
+    <div class="container">
+      <h2 data-aos="fade-right">هتل‌ها</h2>
+      <div class="swiper all-hotels-swiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide hotel-card">
+            <img src="https://images.unsplash.com/photo-1511745939592-5a8b87880c61?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Hotel 4">
+            <div class="hotel-info">
+              <h3>هتل بین‌المللی</h3>
+              <p>مشهد</p>
+              <span>هر شب از ۱٬۸۰۰٬۰۰۰ تومان</span>
+            </div>
+          </div>
+          <div class="swiper-slide hotel-card">
+            <img src="https://images.unsplash.com/photo-1509228468518-c5eeecbff44a?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Hotel 5">
+            <div class="hotel-info">
+              <h3>هتل سنتی</h3>
+              <p>یزد</p>
+              <span>هر شب از ۱٬۲۰۰٬۰۰۰ تومان</span>
+            </div>
+          </div>
+          <div class="swiper-slide hotel-card">
+            <img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Hotel 6">
+            <div class="hotel-info">
+              <h3>هتل مدرن</h3>
+              <p>تبریز</p>
+              <span>هر شب از ۱٬۶۰۰٬۰۰۰ تومان</span>
+            </div>
+          </div>
+          <!-- کارت‌های جدید -->
+          <div class="swiper-slide hotel-card">
+            <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3fd8?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Hotel 7">
+            <div class="hotel-info">
+              <h3>هتل ساحلی کیش</h3>
+              <p>کیش</p>
+              <span>هر شب از ۲٬۵۰۰٬۰۰۰ تومان</span>
+            </div>
+          </div>
+          <div class="swiper-slide hotel-card">
+            <img src="https://images.unsplash.com/photo-1503389152951-9c3d0c6b7a5a?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Hotel 8">
+            <div class="hotel-info">
+              <h3>هتل آپارتمان</h3>
+              <p>رشت</p>
+              <span>هر شب از ۹۰۰٬۰۰۰ تومان</span>
+            </div>
+          </div>
+          <div class="swiper-slide hotel-card">
+            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Hotel 9">
+            <div class="hotel-info">
+              <h3>هتل کوهستانی</h3>
+              <p>کرمانشاه</p>
+              <span>هر شب از ۱٬۳۰۰٬۰۰۰ تومان</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination all-hotels-pagination"></div>
+      </div>
+      <div class="show-more-wrapper" data-aos="fade-up" data-aos-delay="200">
+        <button class="show-more-btn">نمایش بیشتر</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="villas" id="villas">
+    <div class="container">
+      <h2 data-aos="fade-right">ویلاهای پیشنهادی</h2>
+      <div class="swiper villa-swiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide villa-card">
+            <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Villa 1">
+            <div class="villa-info">
+              <h3>ویلای ساحلی</h3>
+              <p>رامسر</p>
+              <span>هر شب از ۳٬۵۰۰٬۰۰۰ تومان</span>
+            </div>
+          </div>
+          <div class="swiper-slide villa-card">
+            <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Villa 2">
+            <div class="villa-info">
+              <h3>ویلای جنگلی</h3>
+              <p>ماسال</p>
+              <span>هر شب از ۲٬۸۰۰٬۰۰۰ تومان</span>
+            </div>
+          </div>
+          <div class="swiper-slide villa-card">
+            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Villa 3">
+            <div class="villa-info">
+              <h3>ویلای لوکس</h3>
+              <p>کردان</p>
+              <span>هر شب از ۵٬۰۰۰٬۰۰۰ تومان</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination villa-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="container">
+      <h2 data-aos="fade-left">امکانات سایت</h2>
+      <div class="features-list">
+        <div class="feature" data-aos="fade-up" data-aos-delay="100">
+          <span class="icon">💳</span>
+          <h4>پرداخت امن</h4>
+          <p>پرداخت آنلاین و مطمئن با درگاه‌های معتبر</p>
+        </div>
+        <div class="feature" data-aos="fade-up" data-aos-delay="200">
+          <span class="icon">🕑</span>
+          <h4>پشتیبانی ۲۴ ساعته</h4>
+          <p>پاسخگویی سریع و حرفه‌ای در هر ساعت شبانه‌روز</p>
+        </div>
+        <div class="feature" data-aos="fade-up" data-aos-delay="300">
+          <span class="icon">🏆</span>
+          <h4>تضمین بهترین قیمت</h4>
+          <p>رزرو هتل با پایین‌ترین قیمت و بیشترین تخفیف</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="container">
+      <h2 data-aos="fade-left">سوالات متداول</h2>
+      <div class="accordion">
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+          <button class="accordion-title">چطور می‌توانم هتل رزرو کنم؟</button>
+          <div class="accordion-content">
+            <p>کافیست شهر و تاریخ مورد نظر را جستجو کنید، هتل دلخواه را انتخاب و مراحل رزرو را تکمیل نمایید.</p>
+          </div>
+        </div>
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+          <button class="accordion-title">آیا امکان کنسلی رزرو وجود دارد؟</button>
+          <div class="accordion-content">
+            <p>بله، شرایط کنسلی هر هتل متفاوت است و در صفحه هر هتل قابل مشاهده است.</p>
+          </div>
+        </div>
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+          <button class="accordion-title">آیا پرداخت آنلاین امن است؟</button>
+          <div class="accordion-content">
+            <p>بله، پرداخت‌ها از طریق درگاه‌های بانکی معتبر و به صورت رمزنگاری شده انجام می‌شود.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="offers" id="offers">
+    <div class="container">
+      <h2 data-aos="fade-right">تخفیف‌ها و پیشنهادهای ویژه</h2>
+      <div class="swiper offers-swiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide offer-card">
+            <div class="offer-ribbon">٪۲۰ تخفیف</div>
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Hotel Offer 1">
+            <div class="offer-info">
+              <h3>هتل ساحلی ویژه</h3>
+              <p>تهران</p>
+              <span class="old-price">۲٬۰۰۰٬۰۰۰</span>
+              <span class="new-price">۱٬۶۰۰٬۰۰۰ تومان</span>
+            </div>
+          </div>
+          <div class="swiper-slide offer-card">
+            <div class="offer-ribbon">٪۱۵ تخفیف</div>
+            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Hotel Offer 2">
+            <div class="offer-info">
+              <h3>ویلای جنگلی</h3>
+              <p>ماسال</p>
+              <span class="old-price">۳٬۰۰۰٬۰۰۰</span>
+              <span class="new-price">۲٬۵۵۰٬۰۰۰ تومان</span>
+            </div>
+          </div>
+          <div class="swiper-slide offer-card">
+            <div class="offer-ribbon">٪۱۰ تخفیف</div>
+            <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Hotel Offer 3">
+            <div class="offer-info">
+              <h3>هتل مدرن</h3>
+              <p>تبریز</p>
+              <span class="old-price">۱٬۸۰۰٬۰۰۰</span>
+              <span class="new-price">۱٬۶۲۰٬۰۰۰ تومان</span>
+            </div>
+          </div>
+          <!-- کارت‌های جدید -->
+          <div class="swiper-slide offer-card">
+            <div class="offer-ribbon">٪۲۵ تخفیف</div>
+            <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Hotel Offer 4">
+            <div class="offer-info">
+              <h3>ویلای ساحلی</h3>
+              <p>رامسر</p>
+              <span class="old-price">۴٬۰۰۰٬۰۰۰</span>
+              <span class="new-price">۳٬۰۰۰٬۰۰۰ تومان</span>
+            </div>
+          </div>
+          <div class="swiper-slide offer-card">
+            <div class="offer-ribbon">٪۳۰ تخفیف</div>
+            <img src="https://images.unsplash.com/photo-1503389152951-9c3d0c6b7a5a?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Hotel Offer 5">
+            <div class="offer-info">
+              <h3>هتل آپارتمان</h3>
+              <p>رشت</p>
+              <span class="old-price">۲٬۰۰۰٬۰۰۰</span>
+              <span class="new-price">۱٬۴۰۰٬۰۰۰ تومان</span>
+            </div>
+          </div>
+          <div class="swiper-slide offer-card">
+            <div class="offer-ribbon">٪۱۸ تخفیف</div>
+            <img src="https://images.unsplash.com/photo-1511745939592-5a8b87880c61?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Hotel Offer 6">
+            <div class="offer-info">
+              <h3>هتل بین‌المللی</h3>
+              <p>مشهد</p>
+              <span class="old-price">۳٬۵۰۰٬۰۰۰</span>
+              <span class="new-price">۲٬۸۷۰٬۰۰۰ تومان</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination offers-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <h2 data-aos="fade-right">گالری تصاویر</h2>
+      <div class="gallery-grid">
+        <div class="swiper gallery-swiper" data-aos="fade-up">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide gallery-slide">
+              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Hotel Gallery 1" />
+            </div>
+            <div class="swiper-slide gallery-slide">
+              <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Villa Gallery 2" />
+            </div>
+            <div class="swiper-slide gallery-slide">
+              <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Hotel Gallery 3" />
+            </div>
+            <div class="swiper-slide gallery-slide">
+              <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Villa Gallery 4" />
+            </div>
+            <div class="swiper-slide gallery-slide">
+              <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Hotel Gallery 5" />
+            </div>
+            <div class="swiper-slide gallery-slide">
+              <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Hotel Gallery 6" />
+            </div>
+            <!-- تصاویر جدید -->
+            <div class="swiper-slide gallery-slide">
+              <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3fd8?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Hotel Gallery 7" />
+            </div>
+            <div class="swiper-slide gallery-slide">
+              <img src="https://images.unsplash.com/photo-1503389152951-9c3d0c6b7a5a?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Hotel Gallery 8" />
+            </div>
+            <div class="swiper-slide gallery-slide">
+              <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Hotel Gallery 9" />
+            </div>
+            <div class="swiper-slide gallery-slide">
+              <img src="https://images.unsplash.com/photo-1511745939592-5a8b87880c61?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Hotel Gallery 10" />
+            </div>
+            <div class="swiper-slide gallery-slide">
+              <img src="https://images.unsplash.com/photo-1509228468518-c5eeecbff44a?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Hotel Gallery 11" />
+            </div>
+            <div class="swiper-slide gallery-slide">
+              <img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="Hotel Gallery 12" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="partners" id="partners">
+    <div class="container">
+      <h2 data-aos="fade-right">برندها و پارتنرهای معتبر</h2>
+      <div class="partners-logos">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Booking.com_logo.svg" loading="lazy" alt="Booking.com" title="Booking.com" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Expedia_Logo.svg" loading="lazy" alt="Expedia" title="Expedia" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Agoda_logo.svg" loading="lazy" alt="Agoda" title="Agoda" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Hotels.com_Logo.svg" loading="lazy" alt="Hotels.com" title="Hotels.com" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Trivago_Logo.svg" loading="lazy" alt="Trivago" title="Trivago" />
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 data-aos="fade-right">تماس با ما</h2>
+      <div class="contact-content">
+        <form class="contact-form" data-aos="fade-left">
+          <input type="text" placeholder="نام و نام خانوادگی" required>
+          <input type="email" placeholder="ایمیل" required>
+          <textarea placeholder="پیام شما..." rows="4" required></textarea>
+          <button type="submit">ارسال پیام</button>
+        </form>
+        <div class="contact-map" data-aos="fade-up">
+          <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=51.338%2C35.699%2C51.342%2C35.701&amp;layer=mapnik" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog" id="blog">
+    <div class="container">
+      <h2 data-aos="fade-right">وبلاگ و مقالات</h2>
+      <div class="bento-grid">
+        <div class="bento-item bento-featured" data-aos="zoom-in">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="مقاله ویژه">
+          <div class="bento-content">
+            <h3>مقاله ویژه: راهنمای انتخاب هتل</h3>
+            <p>نکات طلایی برای انتخاب بهترین هتل در سفرهای داخلی و خارجی.</p>
+            <span class="bento-meta">نویسنده: علی رضایی | ۱۴۰۳/۰۴/۲۹</span>
+            <a href="#" class="bento-link">مطالعه مقاله</a>
+          </div>
+        </div>
+        <div class="bento-item bento-medium" data-aos="zoom-in" data-aos-delay="100">
+          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="مقاله ۲">
+          <div class="bento-content">
+            <h3>۵ مقصد جذاب برای سفر تابستانی</h3>
+            <a href="#" class="bento-link">مطالعه مقاله</a>
+          </div>
+        </div>
+        <div class="bento-item bento-medium" data-aos="zoom-in" data-aos-delay="200">
+          <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="مقاله ۳">
+          <div class="bento-content">
+            <h3>چطور هتل را ارزان‌تر رزرو کنیم؟</h3>
+            <a href="#" class="bento-link">مطالعه مقاله</a>
+          </div>
+        </div>
+        <div class="bento-item bento-small" data-aos="zoom-in" data-aos-delay="300">
+          <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="مقاله ۴">
+          <div class="bento-content">
+            <h3>راهنمای رزرو ویلا</h3>
+          </div>
+        </div>
+        <div class="bento-item bento-small bento-colored" data-aos="zoom-in" data-aos-delay="400">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="مقاله ۵">
+          <div class="bento-content">
+            <h3>نکات سفر خانوادگی</h3>
+          </div>
+        </div>
+        <div class="bento-item bento-small" data-aos="zoom-in" data-aos-delay="500">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="مقاله ۶">
+          <div class="bento-content">
+            <h3>سفر اقتصادی به شمال</h3>
+          </div>
+        </div>
+        <div class="bento-item bento-small bento-colored" data-aos="zoom-in" data-aos-delay="600">
+          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="مقاله ۷">
+          <div class="bento-content">
+            <h3>راهنمای سفر با کودکان</h3>
+          </div>
+        </div>
+        <div class="bento-item bento-small" data-aos="zoom-in" data-aos-delay="700">
+          <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80" loading="lazy" alt="مقاله ۸">
+          <div class="bento-content">
+            <h3>بهترین زمان رزرو هتل</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-links">
+        <a href="#">خانه</a>
+        <a href="#hotels">هتل‌ها</a>
+        <a href="#villas">ویلاها</a>
+        <a href="#blog">وبلاگ</a>
+        <a href="#contact">تماس با ما</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="اینستاگرام"><span>📷</span></a>
+        <a href="#" aria-label="تلگرام"><span>✈️</span></a>
+        <a href="#" aria-label="واتساپ"><span>💬</span></a>
+      </div>
+      <p class="footer-copy">© 2024 هتل‌یاب | تمامی حقوق محفوظ است.</p>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="booking-modal">
+    <div class="modal">
+      <button class="modal-close" aria-label="بستن">×</button>
+      <h3>فرم رزرو هتل</h3>
+      <form class="booking-form">
+        <input type="text" placeholder="نام و نام خانوادگی" required>
+        <input type="tel" placeholder="شماره تماس" required>
+        <input type="date" placeholder="تاریخ ورود" required>
+        <input type="date" placeholder="تاریخ خروج" required>
+        <button type="submit">ثبت رزرو</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="chat-widget" id="chat-widget">
+    <button class="chat-toggle" id="chat-toggle" aria-label="چت آنلاین">
+      💬
+    </button>
+    <div class="chat-box" id="chat-box">
+      <div class="chat-header">
+        <span>پشتیبانی آنلاین</span>
+        <button class="chat-close" id="chat-close" aria-label="بستن">×</button>
+      </div>
+      <div class="chat-messages" id="chat-messages">
+        <div class="chat-message bot">سلام! چطور می‌تونم کمکتون کنم؟</div>
+      </div>
+      <form class="chat-form" id="chat-form">
+        <input type="text" id="chat-input" placeholder="سوال خود را بنویسید..." required />
+        <button type="submit">ارسال</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html> 
